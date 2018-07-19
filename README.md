@@ -13,7 +13,7 @@ You reply to starting comments or other replies. Replies take the same form as c
 Upvotes push comments or replies higher. To upvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with an id, followed by the text ":up". An example memo, would be "90c17b59:up".
 
 # Upvotes #2
-Upvotes push comments or replies higher. To upvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the user's address being upvoted; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with the topic ID, followed by the text ":up:", followed by a unique id. An example memo, would be "aaaaaaaaaaaa:up:90c17b59".
+Upvotes push comments or replies higher. To upvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the user's address being upvoted; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with the topic ID, followed by a colon ":", followed by the "up", followed by a colon ":", followed by a unique id. An example memo, would be "aaaaaaaaaaaa:&#8203;up&#8203;:90c17b59".
 
 # Downvotes
 Downvotes push comments or replies lower. To downvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with an id, followed by the text ":down". An example memo, would be "90c17b59:down".
