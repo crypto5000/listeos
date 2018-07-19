@@ -1,6 +1,8 @@
 # Listeos
 Listeos is a discussion website that uses the EOS blockchain to comment, vote, and reward users. To view the project, visit https://listeos.com
 
+![Listeos Home](https://github.com/crypto5000/listeos/blob/master/img/listeos.gif)
+
 # Comments
 Comments are starting responses to the topic. To comment, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a text memo. The "memo" field is the text that gets displayed on Listeos as your comment. The account you send "from" becomes your username displayed next to the comment.
 
