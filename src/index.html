@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Listeos is a discussion website that uses the EOS blockchain to comment, vote, and reward users.">
+    <meta name="author" content="Listeos">
+
+    <title>Listeos: Discuss Topics Using The EOS Blockchain</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato: 300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/2-col-portfolio.css" rel="stylesheet">      
+    <link rel="icon" href="./img/fav.ico" />	
+    
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Listeos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/crypto5000/listeos">Github</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#topics">Topics</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>          
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="intro-header">
+      <div class="container">
+        <div class="intro-message">
+          <br><br>          
+          <h2 style="padding-bottom:10px;">Discuss Topics Using The EOS Blockchain.</h2>                              
+          <hr class="intro-divider">                    
+          <h3 style="padding-bottom:10px;">Comment, vote, and get rewarded with EOS.</h3>                              
+          <ul class="list-inline intro-social-buttons" id="mainButtons">            
+            <div class="form-group row">                                                
+                <div class="col-lg-12">                                     
+                    <button type="submit" class="btn btn-primary" id="commentButton" style="border-style:solid;border-color: #ffffff;width:100%;"><h3 style="margin-top:5px;">How to Comment</h3></button><br>                                                                                                        
+                    <button type="submit" class="btn btn-primary" id="replyButton" style="border-style:solid;border-color: #ffffff;width:100%;margin-top:10px"><h3 style="margin-top:5px;">How to Reply</h3></button><br>                                                                                                                
+                    <button type="submit" class="btn btn-primary" id="upvoteButton" style="border-style:solid;border-color: #ffffff;width:100%;margin-top:10px"><h3 style="margin-top:5px;">How to Upvote</h3></button><br>                                                                                                                
+                    <button type="submit" class="btn btn-primary" id="downvoteButton" style="border-style:solid;border-color: #ffffff;width:100%;margin-top:10px"><h3 style="margin-top:5px;">How to Downvote</h3></button><br>                                                                                                                
+                </div>
+            </div>                                                
+          </ul>                                        
+          <h5 style="padding-bottom:10px;text-decoration:underline" id="walletButton">See the supported EOS wallets.</h5>                                        
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="content-section-a" style="padding-bottom:10px" id="topics">
+        
+        <div class="container">        
+        
+        <div class="row text-center">
+
+            <div class="col-lg-12">
+                <h4 class="page-header">List of Topics for Discussion:</h4>
+                <hr class="intro-divider">          
+            </div>                
+
+            <div class="col-lg-12">
+                <div id="browseTop">                    
+                    <div class="form-group row pGroup" id="pGroup1">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic1" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP1">Discuss</button>                                   
+                        </div>                                            
+                    </div>                                                                    
+                    <div class="form-group row pGroup" id="sGroup1" style="margin-bottom:25px;">                                                
+                        <div class="col-lg-4">                 
+                            Sourced from Hacker News
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID1" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">                                             
+                            Posted: 
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup2">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic2" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP2">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="sGroup2" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                            Sourced from Reddit
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID2" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">                                             
+                            Posted:
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup3">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic3" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP3">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="sGroup3" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                            Sourced from Coindesk
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID3" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">                                             
+                            Posted:
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup4">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic4" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP4">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="sGroup4" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                            Sourced from Product Hunt
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID4" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">                                             
+                            Posted:
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup5">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic5" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP5">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="sGroup5" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                            Sourced from Techmeme
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID5" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">      
+                            Posted:
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup6">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic6" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP6">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="sGroup6" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                            Sourced from Listeos
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID6" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">      
+                            Posted:
+                        </div>                                                
+                    </div>                                                
+                    <div class="form-group row pGroup" id="pGroup7">                                                
+                        <div class="col-lg-10">                 
+                            <input class="form-control" id="topic7" type="text" value="" disabled>
+                        </div>                        
+                        <div class="col-lg-2">                 
+                            <button type="submit" class="btn btn-primary pButton" id="fetchP7">Discuss</button>                                   
+                        </div>                                                
+                    </div>                                                                        
+                    <div class="form-group row pGroup" id="sGroup7" style="margin-bottom:25px;">                                                 
+                        <div class="col-lg-4">                 
+                           Sourced from Listeos
+                        </div>                        
+                        <div class="col-lg-4">                 
+                            EOS Topic ID: <div id="topicID7" style="display:inline"></div>
+                        </div>                                                
+                        <div class="col-lg-4">                                             
+                           Posted:
+                        </div>                                                
+                    </div>                                                    
+                </div>                
+                <div class="col-lg-12">
+                    <br>
+                    <h5 style="color:gray;font-style:italic">* Topics rotate after several hours</h5>                        
+                </div>                
+                
+            </div>                
+            <hr class="intro-divider"> 
+        </div>
+
+        <!-- /.row -->            
+    </div>      
+    <!-- /.container -->
+
+    </section>
+        
+    <!-- Page Content -->
+    <section class="content-section-a" style="padding-bottom:0px" id="features">
+
+      <div class="container">        
+          <div class="row text-center">              
+              <div class="col-md-6" id="comments">
+                  <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fa fa-commenting fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Comments</h4>
+                  <p class="text-muted">Comments are starting responses to the topic. To comment, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a text memo. The "memo" field is the text that gets displayed on Listeos as your comment. The account you send "from" becomes your username displayed next to the comment.</p>
+              </div>
+              <div class="col-md-6" id="replies">
+                  <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fa fa-reply-all fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Replies</h4>
+                  <p class="text-muted">You reply to starting comments or other replies. Replies take the same form as comments EXCEPT the memo field requires a special starting code. The memo field must start with an id, followed by a colon ":". An example memo, would be "90c17b59: This is my reply". In this example, the text "This is my reply" would be displayed.</p>
+              </div>
+          </div>        
+          <div class="row text-center">
+              <div class="col-md-6" id="upvotes">
+                  <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Upvote #1</h4>
+                  <p class="text-muted">Upvotes push comments or replies higher. To upvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with an id, followed by the text ":up". An example memo, would be "90c17b59:up".</p>
+              </div>
+              <div class="col-md-6">
+                  <span class="fa-stack fa-4x">
+                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Upvote #2</h4>
+                  <p class="text-muted">Upvotes push comments or replies higher. To upvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the user's address being upvoted; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with the topic ID, followed by the text ":up:", followed by a unique id. An example memo, would be "aaaaaaaaaaaa:up:90c17b59".</p>
+              </div>
+          </div>                  
+          <div class="row text-center">
+            <div class="col-md-6" id="downvotes">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-thumbs-down fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Downvotes</h4>
+                <p class="text-muted">Downvotes push comments or replies lower. To downvote, you send an EOS transaction from a wallet. The transaction must: 1) be sent to the Topic ID address; 2) contain the specified EOS amount; 3) include a specially formatted memo. The memo field must start with an id, followed by the text ":down". An example memo, would be "90c17b59:down".</p>
+            </div>
+            <div class="col-md-6" id="wallets">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Wallets</h4>
+                <p class="text-muted">Listeos works with EOS transactions. So any wallet or EOS tool that allows you to transfer EOS should work with Listeos. You just need to be able to type the appropriate text into the "memo" field of the transaction. It's also possible to send from an exchange - assuming the exchange doesn't have a minimum withdrawal limit. If you send from an exchange, your displayed username is the exchange's wallet address.</p>
+            </div>
+        </div>                  
+      </div>      
+      <!-- /.container -->
+
+    </section>
+
+    <!-- Page Content -->
+    <section class="content-section-a" style="padding-bottom:10px" id="vote">
+        
+        <div class="container">                            
+            <div class="row text-center">            
+                <div class="col-lg-12">                        
+                    <h4>Block Producer Endorsements:</h4>
+                    <h3 class="alert alert-info" role="alert">Vote TEAMGREYMASS.</h3>
+                    <h3 class="alert alert-info" role="alert">Vote EOSNEWYORKIO.</h3>
+                    <h3 class="alert alert-info" role="alert">Vote EOS DETROIT.</h3>
+                    <h6>* Listeos is not affiliated with Greymass, EOS NY, or EOS Detroit.</h6>                                                                        
+                </div>
+
+            </div>
+            <!-- /.row -->            
+        </div>      
+        <!-- /.container -->
+
+    </section>
+        
+    <!-- Page Content -->
+    <section class="content-section-a" style="padding-bottom:20px" id="faq">
+            
+        <div class="container">        
+            <hr class="intro-divider">          
+            <div class="row text-center">
+            
+                <div class="col-lg-12">
+                    <h3 class="page-header">Frequently Asked Questions:</h3>
+                    <hr class="faq-divider">          
+                    <p>Question: What is Listeos?</p> 
+                    <p>Answer: Listeos is a discussion platform for the EOS community. It uses the EOS blockchain to comment, vote, and reward people.</p>
+                    <hr class="faq-divider">          
+                    <p>Question: Why use Listeos over existing alternatives?</p> 
+                    <p>Answer: Listeos uses EOS microtransactions to reward people and deter spam. Plus, it's decentralized and censorship resistant.</p>
+                    <hr class="faq-divider">         
+                    <p>Question: How fast will a comment show on Listeos?</p> 
+                    <p>Answer: All transactions (including comments and upvotes) are processed in under 1 second on the EOS blockchain.</p>                                    
+                    <hr class="faq-divider">         
+                    <p>Question: Do I need an EOS account to use Listeos?</p> 
+                    <p>Answer: You need EOS to use Listeos. It's best to have your own account, but it's still possible to use Listeos from an exchange (without having your own account).</p>                                                        
+                    <hr class="faq-divider">         
+                    <p>Question: What are Topic IDs?</p> 
+                    <p>Answer: Topic IDs are just EOS accounts from the genesis snapshot. Every topic is linked to 1 EOS account. So every discussion has the potential to send small amounts of EOS to a specific tokenholder.</p>                                                        
+                    <hr class="faq-divider">                             
+                    <p>Question: How are genesis accounts allocated to topics?</p> 
+                    <p>Answer: Each topic randomly pulls a genesis account that hasn't been allocated to a discussion yet. Once all genesis accounts have been used, the cycle starts over.</p>                                                        
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Why do I have a bunch of small EOS transfers in my account?</p> 
+                    <p>Answer: EOS transactions within Listeos go from tokenholder to tokenholder. It's sort of like an airdrop from another person directly to you.</p>                                                        
+                    <hr class="faq-divider">                             
+                    <p>Question: Does it cost EOS to use Listeos?</p> 
+                    <p>Answer: All transactions require tiny amounts of EOS. This helps deter spam comments and provide rewards to users.</p>                                                                            
+                    <hr class="faq-divider">         
+                    <p>Question: How much EOS does it cost to make a comment?</p> 
+                    <p>Answer: These are microamounts like 0.000123 EOS.</p>                                                        
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Do I have to send the exact EOS specified by the topic's instructions?</p> 
+                    <p>Answer: Yes. This is to minimize collisions. If you send a different amount, Listeos ignores it.</p>                                                        
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Can I make EOS using Listeos?</p> 
+                    <p>Answer: Listeos allows for upvotes directly to users. So if someone likes your response enough to upvote, they may send you EOS directly.</p>                                                                            
+                    <hr class="faq-divider">                                                 
+                    <p>Question: How do I comment, upvote, downvote, and reply?</p>                     
+                    <p>Answer: See the <a href="#features">"How To"</a> section.</p>                                                                            
+                    <hr class="faq-divider">                     
+                    <p>Question: What's the difference between a comment and reply?</p>                     
+                    <p>Answer: Comments are top-level starting responses to the topic. Everything else is a reply. You reply to comments. Then you reply to replies.</p>                                                                            
+                    <hr class="faq-divider">                                                                                                 
+                    <p>Question: Is there a limit to a comment or reply?</p>                     
+                    <p>Answer: The limit is 256 characters, which is the maximum you can put into the "memo" field of a transfer.</p>                                                                            
+                    <hr class="faq-divider">                                                                                                                     
+                    <p>Question: What wallets are supported?</p> 
+                    <p>Answer: Any wallet that allows you to transfer EOS and has a memo field.</p>                                                                            
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Does Listeos ask for my private keys?</p> 
+                    <p>Answer: No.</p>                                                                            
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Why are there 2 options for upvoting?</p> 
+                    <p>Answer: This is to deter sybil attacks, where a person upvotes themselves.</p>                                                        
+                    <hr class="faq-divider">                                                 
+                    <p>Question: If someone upvotes me, do I get EOS?</p> 
+                    <p>Answer: Only if they choose to send you EOS directly, rather than sending to the genesis-topic account.</p>                                                        
+                    <hr class="faq-divider">                                                 
+                    <p>Question: What is that unique id used in the memo?</p> 
+                    <p>Answer: This is to identify a specific comment or reply. A person could make multiple replies within a single topic. The id is derived from the blockchain transaction ID.</p>                                                                            
+                    <hr class="faq-divider">                                                                     
+                    <p>Question: Can I use Listeos from an exchange?</p> 
+                    <p>Answer: Yes, assuming the exchange has a transfer feature with a memo field and allows small withdrawals (< 0.1EOS). Note that the exchange account becomes your user name for the comment.</p>                                                                            
+                    <hr class="faq-divider">                                                 
+                    <p>Question: Is the code open source?</p> 
+                    <p>Answer: Yes. It's on github <a href="https://www.github.com/crypto5000/listeos">here</a>.</p>                                                        
+                    <hr class="faq-divider">                              
+                    <p>Question: What coins are supported?</p> 
+                    <p>Answer: Currently, just EOS.</p>
+                </div>
+                
+            </div>            
+            <!-- /.row -->            
+    
+        </div>    
+        
+    </section>
+    <!-- /.container -->
+        
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="js/xss.js"></script>
+    
+    <!-- Page-Level Demo Scripts -->
+    <script>
+    $(document).ready(function() {        
+                                              
+        // handle the buttons
+        $("#commentButton").on( "click", function() {		
+            
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#comments").offset().top
+            }, 1000);
+
+            return false;
+                        
+        });  	                              
+
+        // handle the buttons
+        $("#replyButton").on( "click", function() {		
+                                
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#replies").offset().top
+            }, 1000);
+
+            return false;
+                        
+        });  	                                     
+
+        // handle the buttons
+        $("#upvoteButton").on( "click", function() {		
+            
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#upvotes").offset().top
+            }, 1000);
+
+            return false;
+                        
+        });  	                              
+
+        // handle the buttons
+        $("#downvoteButton").on( "click", function() {		
+                                
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#downvotes").offset().top
+            }, 1000);
+
+            return false;
+                        
+        });  	                                     
+
+        // handle the buttons
+        $("#walletButton").on( "click", function() {		
+                                
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#wallets").offset().top
+            }, 1000);
+
+            return false;
+                        
+        });  	                                    
+
+        // handle the topic
+        $(".pButton").on( "click", function() {		
+            
+            // get the id of the button
+            var idButton = $(this).attr('id');
+
+            // parse off the number to get slot
+            var slot = idButton.substring();
+
+            // use slot to get address
+            slot = slot.substring(6);
+
+            // get the address            
+            let topicID = $('#topicID' + slot).text();		                
+
+            // validate the id length
+            if ((topicID.length < 1) || (topicID.length > 12)) {                
+                topicID = "";
+            }
+
+            // validate the id is only letters and numbers            
+            for (var j = 0; j < topicID.length; j++) {
+                if (("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ").indexOf(topicID.charAt(j)) < 0) {                            
+                    topicID = "";
+                }
+            }
+
+            // go to discuss
+            window.location = "https://listeos.com/discuss.html?q="+topicID;
+                        
+        });  	                                     
+ 
+        
+    });	
+
+    </script>
+	
+  </body>
+  
+</html>
